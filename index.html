@@ -33,7 +33,7 @@
   <script src="https://kit.fontawesome.com/12d6715e70.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="font-manrope">
+<body class="font-manrope sm:mx-7">
   <header class="container mx-auto">
     <div class="hero">
       <div class="hero-content flex-col lg:flex-row">
@@ -52,7 +52,7 @@
           </button>
         </div>
         <div>
-          <img src="/images/banner.png" class="max-w-sm" />
+          <img src="/images/banner.png" />
           <div class="-mt-16 flex items-center gap-3 bg-white rounded-lg drop-shadow-lg p-6 w-60">
             <i class="fas fa-star text-3xl text-orange-300"></i>
             <div>
@@ -64,11 +64,13 @@
       </div>
     </div>
   </header>
-  <main class="container mx-auto my-24">
+  <main class="container mx-auto">
     <!-- featured product section -->
-    <section class="space-y-7">
+    <section class="my-24 space-y-7 mx-7 lg:mx-auto">
       <h3 class="text-5xl font-extrabold text-center">Our Featured Products</h3>
-      <p class="font-medium max-w-[900px] mx-auto text-center">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+      <p class="font-medium max-w-[900px] mx-auto text-center">There are many variations of passages of Lorem Ipsum
+        available, but the majority have suffered alteration in some form, by injected humour, or randomised words which
+        don't look even slightly believable. </p>
       <div class="flex gap-6 mx-2 flex-col lg:flex-row">
         <!-- first featured tea -->
         <div class="card bg-[#F4F4F4] p-7 shadow-xl">
@@ -104,7 +106,81 @@
         </div>
       </div>
     </section>
-     
+    <!-- great tea section -->
+    <section class="my-24 flex flex-col mx-7 lg:mx-auto lg:flex-row">
+      <div class="flex-1 grid gap-7 grid-cols-1 lg:grid-cols-2">
+        <div class="h-36 bg-gradient-to-r from-red-100 to-orange-100 rounded-lg"></div>
+        <div class="row-span-2 bg-[#EAA6231A] px-8 py-12 flex justify-center items-center rounded-lg">
+          <img src="images/fresh-1.png" alt="">
+        </div>
+        <div class="row-span-2 bg-[#5776391A] px-8 py-12 flex justify-center items-center rounded-lg">
+          <img src="images/fresh-2.png" alt="">
+        </div>
+        <div class="h-36 bg-gradient-to-r from-[#D9D9D9] to-white rounded-lg"></div>
+
+      </div>
+      <div class="flex-1 space-y-5">
+        <h3 class="text-5xl font-extrabold">Great Tea, Freshly <br>
+          Presented</h3>
+        <p class="text-[#777] font-medium">The meaning of gong cha is chanese is to provide the best tea to emperor from
+          all possessions . It represents the highest quality and self expectation. Establishing in 2006, Gong cha had
+          been deeply appreciated by its custoers because of good words of mouth and unique customized service orginated
+          from Taiwan.</p>
+        <h4 class="text-xl font-extrabold">Unique Taste</h4>
+        <p class="text-[#777] font-medium">A Unique and different style from other teapots gives a luxurious and
+          minimalist impression</p>
+        <h4 class="text-xl font-extrabold">Premium Quality</h4>
+        <p class="text-[#777] font-medium">Premium Quality that makes tea more elegant and more durable when you use it.
+        </p>
+      </div>
+    </section>
+    <!-- super client review section -->
+    <section
+      class="my-24 flex gap-16 lg:justify-between rounded-xl flex-col lg:flex-row bg-gradient-to-r from-[#FF8938] to-[#F00] px-16 py-24">
+      <div class="flex items-center">
+        <div class="space-y-7">
+          <h2 class="text-5xl font-extrabold text-white">Meet Our Super <br>
+            Clients</h2>
+          <p class="font-medium text-white max-w-lg">There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected humour, or randomised words which don't look
+            even slightly believable. </p>
+          <button class="btn">Show All</button>
+        </div>
+      </div>
+      <!-- review slide container -->
+      <div class="relative"> 
+        <!-- next review -->
+        <div class="relative z-0 opacity-40 mb-14 bg-white p-10 lg:max-h-56 rounded-lg">
+          <img class="absolute -top-5 -left-5 border-4 rounded-full bg-white" src="images/client.png" alt="">
+          <p class="max-w-xs mb-5 text-[#777]">We are providing the best and suitable home insurance services for the people who are interested to treatment</p>
+          <h3 class="font-bold">Ilham Yuda</h3>
+          <h4 class="font-medium text-[#777]">Businessman</h4>
+          <div class="flex justify-end">
+            <img src="images/circles.png" alt="">
+          </div>
+        </div>
+        <!-- current review -->
+        <div class="absolute top-28 lg:-left-28 z-10 bg-white p-10 lg:max-h-56 rounded-lg">
+          <img class="absolute -top-5 -left-5 border-4 rounded-full bg-white" src="images/client.png" alt="">
+          <p class="max-w-xs mb-5 text-[#777]">We are providing the best and suitable home insurance services for the people who are interested to treatment</p>
+          <h3 class="font-bold">Ilham Yuda</h3>
+          <h4 class="font-medium text-[#777]">Businessman</h4>
+          <div class="flex justify-end">
+            <img src="images/circles.png" alt="">
+          </div>
+        </div>
+        <!-- previous review -->
+        <div class="relative z-0 opacity-40 bg-white p-10 lg:max-h-56 rounded-lg">
+          <img class="absolute -top-5 -left-5 border-4 rounded-full bg-white" src="images/client.png" alt="">
+          <p class="max-w-xs mb-5 text-[#777]">We are providing the best and suitable home insurance services for the people who are interested to treatment</p>
+          <h3 class="font-bold">Ilham Yuda</h3>
+          <h4 class="font-medium text-[#777]">Businessman</h4>
+          <div class="flex justify-end">
+            <img src="images/circles.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
   <footer></footer>
 </body>
